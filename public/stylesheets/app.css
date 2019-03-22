@@ -1,0 +1,10 @@
+.icon {
+    font-size: 1em;
+}
+ 
+#newbook {
+    margin: 7em;
+}
+#delete {
+    display: inline;
+}

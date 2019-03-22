@@ -1,0 +1,29 @@
+<% include ./partials/header %>
+
+<div id="newbook" class="ui main text container segment">
+    
+    <div class="ui huge header"> New Book List </div>
+    
+    <form class="ui form" action="/books" method="POST">
+        <div class="field">
+            <label>Title</label>
+            <input type="text" name="book[title]" placeholder="title">
+        </div>
+        <div class="field">
+            <label>Author</label>
+            <input type="text" name="book[Author]" placeholder="Author">
+        </div>
+        <div class="field">
+             <label>Image</label>
+             <input type="text" name="book[image]" placeholder="image">
+         </div>
+         <div class="field"> 
+              <label>Book Summary</label>
+              <textarea name="book[body]"></textarea>
+          </div>  
+               
+              <input class="ui green basic basic button" type="submit">
+        
+    </form>
+</div>
+<% include ./partials/footer %>
